@@ -13,21 +13,21 @@
    DESIGN TOKENS
 ═══════════════════════════════════════════════ */
 :root {
-  --ink:        #0e0b16;
-  --ink2:       #161020;
-  --ink3:       #1e1730;
-  --gold:       #b8860b;
-  --gold2:      #d4a520;
-  --gold3:      #e8c96a;
-  --gold-glow:  rgba(184,134,11,.15);
-  --rose:       #9b4d5e;
-  --rose2:      #c47080;
-  --ivory:      #f2ece0;
-  --ivory2:     #ccc3ad;
-  --stone:      #6b6070;
-  --border:     rgba(184,134,11,.16);
-  --border2:    rgba(184,134,11,.32);
-  --card:       rgba(255,255,255,.038);
+  --ink:        #FBF7EE;
+  --ink2:       #F3ECDA;
+  --ink3:       #EADFC4;
+  --gold:       #A9740A;
+  --gold2:      #C68D17;
+  --gold3:      #DDA83C;
+  --gold-glow:  rgba(169,116,10,.12);
+  --rose:       #8B3A4A;
+  --rose2:      #A94F60;
+  --ivory:      #241B12;
+  --ivory2:     #55483A;
+  --stone:      #8a7f6e;
+  --border:     rgba(169,116,10,.20);
+  --border2:    rgba(169,116,10,.38);
+  --card:       rgba(36,27,18,.035);
   --r:          5px;
 }
 
@@ -48,18 +48,16 @@ body{
 body::before{
   content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(1px 1px at  7% 10%,rgba(255,255,255,.50) 0%,transparent 100%),
-    radial-gradient(1px 1px at 20% 35%,rgba(255,255,255,.30) 0%,transparent 100%),
-    radial-gradient(1px 1px at 48%  5%,rgba(255,255,255,.45) 0%,transparent 100%),
-    radial-gradient(1px 1px at 68% 25%,rgba(255,255,255,.28) 0%,transparent 100%),
-    radial-gradient(1px 1px at 85% 48%,rgba(255,255,255,.50) 0%,transparent 100%),
-    radial-gradient(1px 1px at 35% 65%,rgba(255,255,255,.25) 0%,transparent 100%),
-    radial-gradient(1px 1px at 60% 80%,rgba(255,255,255,.35) 0%,transparent 100%),
-    radial-gradient(1px 1px at 12% 85%,rgba(255,255,255,.28) 0%,transparent 100%),
-    radial-gradient(1px 1px at 92%  8%,rgba(255,255,255,.42) 0%,transparent 100%),
-    radial-gradient(1px 1px at 75% 68%,rgba(255,255,255,.30) 0%,transparent 100%),
-    radial-gradient(2px 2px at 30% 18%,rgba(184,134,11,.20) 0%,transparent 100%),
-    radial-gradient(2px 2px at 55% 45%,rgba(184,134,11,.12) 0%,transparent 100%);
+    radial-gradient(2px 2px at  7% 10%,rgba(169,116,10,.16) 0%,transparent 100%),
+    radial-gradient(2px 2px at 20% 35%,rgba(139,58,74,.10) 0%,transparent 100%),
+    radial-gradient(2px 2px at 48%  5%,rgba(169,116,10,.14) 0%,transparent 100%),
+    radial-gradient(2px 2px at 68% 25%,rgba(169,116,10,.10) 0%,transparent 100%),
+    radial-gradient(2px 2px at 85% 48%,rgba(139,58,74,.12) 0%,transparent 100%),
+    radial-gradient(2px 2px at 35% 65%,rgba(169,116,10,.10) 0%,transparent 100%),
+    radial-gradient(2px 2px at 60% 80%,rgba(169,116,10,.14) 0%,transparent 100%),
+    radial-gradient(2px 2px at 12% 85%,rgba(139,58,74,.10) 0%,transparent 100%),
+    radial-gradient(2px 2px at 92%  8%,rgba(169,116,10,.16) 0%,transparent 100%),
+    radial-gradient(2px 2px at 75% 68%,rgba(169,116,10,.12) 0%,transparent 100%);
 }
 
 /* ═══════════════════════════════════════════════
@@ -166,7 +164,7 @@ body::before{
 .hero-verse{
   font-family:'Noto Serif Devanagari',serif;
   font-size:clamp(.95rem,2vw,1.12rem);
-  font-style:italic;color:rgba(242,236,224,.6);
+  font-style:italic;color:rgba(36,27,18,.62);
   line-height:2.1;max-width:500px;margin:0 auto 2.5rem;
 }
 .hero-cta{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;}
@@ -182,7 +180,7 @@ body::before{
 .btn-gold:hover{background:var(--gold2);box-shadow:0 6px 22px rgba(184,134,11,.38);transform:translateY(-2px);}
 .btn-ghost{
   background:transparent;color:var(--ivory2);
-  border:1px solid rgba(242,236,224,.22);
+  border:1px solid rgba(36,27,18,.20);
   padding:.65rem 1.7rem;
   font-family:'Noto Sans Devanagari',sans-serif;
   font-size:.9rem;border-radius:3px;cursor:pointer;
@@ -245,7 +243,7 @@ body::before{
 .prose{
   font-family:'Noto Serif Devanagari',serif;
   font-size:.97rem;line-height:2;
-  color:rgba(242,236,224,.75);
+  color:rgba(36,27,18,.72);
 }
 .prose p{margin-bottom:.9rem;}
 .prose strong{color:var(--gold2);font-weight:600;}
@@ -253,7 +251,7 @@ body::before{
 .dot-list li{
   display:flex;align-items:flex-start;gap:.65rem;
   font-family:'Noto Sans Devanagari',sans-serif;
-  font-size:.88rem;color:rgba(242,236,224,.7);line-height:1.6;
+  font-size:.88rem;color:rgba(36,27,18,.68);line-height:1.6;
 }
 .dot-list li::before{content:'✦';color:var(--gold);font-size:.6rem;margin-top:.42rem;flex-shrink:0;}
 
@@ -294,7 +292,7 @@ body::before{
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(1.1rem,2.5vw,1.5rem);
   font-style:italic;font-weight:300;
-  color:rgba(242,236,224,.7);line-height:1.8;
+  color:rgba(36,27,18,.68);line-height:1.8;
 }
 .mission-attr{
   margin-top:.75rem;font-size:.75rem;letter-spacing:.1em;
@@ -325,7 +323,7 @@ body::before{
 .poem-body{
   font-family:'Noto Serif Devanagari',serif;
   font-size:.93rem;font-style:italic;
-  color:rgba(242,236,224,.75);
+  color:rgba(36,27,18,.72);
   line-height:2.1;position:relative;
 }
 .poem-attr{
@@ -416,7 +414,7 @@ body::before{
 }
 .ev-desc{
   font-family:'Noto Serif Devanagari',serif;
-  font-size:.86rem;color:rgba(242,236,224,.55);line-height:1.8;
+  font-size:.86rem;color:rgba(36,27,18,.55);line-height:1.8;
 }
 .ev-foot{padding:0 1.4rem 1.1rem;display:flex;gap:.5rem;flex-wrap:wrap;}
 .ev-link-btn{
@@ -543,7 +541,7 @@ body::before{
 }
 .form-group input,
 .form-group textarea{
-  width:100%;background:rgba(255,255,255,.04);
+  width:100%;background:rgba(36,27,18,.035);
   border:1px solid rgba(184,134,11,.18);border-radius:3px;
   padding:.58rem .9rem;color:var(--ivory);outline:none;
   font-family:'Noto Sans Devanagari','Inter',sans-serif;
@@ -633,7 +631,7 @@ footer a:hover{color:var(--gold2);}
 
 .adm-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.25rem;}
 .adm-item{
-  background:rgba(255,255,255,.035);border:1px solid var(--border);
+  background:rgba(36,27,18,.03);border:1px solid var(--border);
   border-radius:4px;padding:.9rem;transition:border .2s;
 }
 .adm-item:hover{border-color:var(--border2);}
@@ -689,14 +687,14 @@ footer a:hover{color:var(--gold2);}
 .modal-close:hover{color:var(--ivory);}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;}
 .form-group select{
-  width:100%;background:rgba(255,255,255,.04);
+  width:100%;background:rgba(36,27,18,.035);
   border:1px solid rgba(184,134,11,.18);border-radius:3px;
   padding:.58rem .9rem;color:var(--ivory);outline:none;
   font-family:'Noto Sans Devanagari','Inter',sans-serif;font-size:.9rem;
   transition:border .25s;
 }
 .form-group select:focus{border-color:var(--gold);background:rgba(184,134,11,.04);}
-.form-group select option{background:#161020;}
+.form-group select option{background:#FBF7EE;}
 .form-submit{
   width:100%;margin-top:.5rem;
   background:var(--gold);color:var(--ink);
@@ -1068,7 +1066,7 @@ footer a:hover{color:var(--gold2);}
           <label>संदेश</label>
           <textarea placeholder="अपना संदेश यहाँ लिखें..." id="cfMsg"></textarea>
         </div>
-        <button class="btn-gold" style="width:100%;padding:.65rem;font-size:.95rem;" onclick="sendContact()">संदेश भेजें</button>
+        <button class="btn-gold" style="width:100%;padding:.65rem;font-size:.95rem;" onclick="sendContact(event)">संदेश भेजें</button>
       </div>
     </div>
   </div>
@@ -1110,9 +1108,20 @@ footer a:hover{color:var(--gold2);}
       </div>
       <span class="form-err" id="dLoginErr">❌ गलत जानकारी</span>
       <button class="form-submit" onclick="doLogin()">प्रवेश करें</button>
-      <p style="text-align:center;font-size:.72rem;color:var(--stone);margin-top:.25rem;">
-        user: <b style="color:var(--gold2)">admin</b> &nbsp;/&nbsp; pass: <b style="color:var(--gold2)">anusuya123</b>
+      <p style="text-align:center;margin-top:.6rem;">
+        <a href="#" onclick="openForgotBox();return false;" style="font-size:.78rem;color:var(--gold2);text-decoration:underline;">पासवर्ड भूल गए? नया पासवर्ड ईमेल पर भेजें</a>
       </p>
+    </div>
+
+    <!-- FORGOT PASSWORD BOX -->
+    <div id="forgotBox" style="display:none;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);">
+      <p style="font-size:.78rem;color:var(--stone);margin-bottom:.6rem;">पंजीकृत ईमेल पर एक नया पासवर्ड भेजा जाएगा।</p>
+      <div class="form-group" style="margin:0 0 .6rem 0;">
+        <label>आपका रिकवरी ईमेल</label>
+        <input type="email" id="forgotEmail" placeholder="batrideeksha@gmail.com"/>
+      </div>
+      <span class="form-err" id="forgotErr"></span>
+      <button class="form-submit" onclick="sendPasswordReset()">नया पासवर्ड भेजें</button>
     </div>
   </div>
 
@@ -1121,6 +1130,23 @@ footer a:hover{color:var(--gold2);}
     <div class="adm-stats">
       <div class="adm-stat"><div class="adm-stat-num" id="dStatUp">0</div><div class="adm-stat-lbl">आगामी</div></div>
       <div class="adm-stat"><div class="adm-stat-num" id="dStatCo">0</div><div class="adm-stat-lbl">पूर्ण</div></div>
+    </div>
+    <div style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.82rem;color:var(--stone);margin-bottom:.5rem;cursor:pointer;" onclick="toggleSettingsBox()">⚙ खाता सेटिंग्स (उपयोगकर्ता नाम / पासवर्ड / ईमेल बदलें) ▾</div>
+    <div id="settingsBox" style="display:none;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.9rem;margin-bottom:1rem;">
+      <div class="form-group" style="margin:0 0 .6rem 0;">
+        <label>उपयोगकर्ता नाम</label>
+        <input type="text" id="setUser"/>
+      </div>
+      <div class="form-group" style="margin:0 0 .6rem 0;">
+        <label>नया पासवर्ड</label>
+        <input type="password" id="setPass" placeholder="नया पासवर्ड लिखें"/>
+      </div>
+      <div class="form-group" style="margin:0 0 .6rem 0;">
+        <label>रिकवरी ईमेल</label>
+        <input type="email" id="setEmail" placeholder="batrideeksha@gmail.com"/>
+      </div>
+      <span class="form-err" id="setErr"></span>
+      <button class="form-submit" onclick="saveSettings()">सेटिंग्स सहेजें</button>
     </div>
     <div style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.82rem;color:var(--stone);margin-bottom:.5rem;">सभी कार्यक्रम</div>
     <div class="adm-list" id="drawerEvList"></div>
@@ -1193,7 +1219,17 @@ footer a:hover{color:var(--gold2);}
 /* ════════════════════════════
    DATA
 ════════════════════════════ */
-const CREDS = {u:'admin', p:'anusuya123'};
+/* ════════════════════════════
+   EMAIL SETUP (Web3Forms)
+   1) Go to https://web3forms.com
+   2) Enter batrideeksha@gmail.com and get a free Access Key (arrives instantly by email)
+   3) Paste that key below, replacing YOUR_ACCESS_KEY_HERE
+════════════════════════════ */
+const WEB3FORMS_KEY = "3f011c88-ba72-4644-a9cd-3c5733e029f2";
+const OWNER_EMAIL = "batrideeksha@gmail.com";
+
+let CREDS = JSON.parse(localStorage.getItem('anusuya_admin') || 'null') || {u:'admin', p:'anusuya123', email: OWNER_EMAIL};
+function saveCreds(){ localStorage.setItem('anusuya_admin', JSON.stringify(CREDS)); }
 let isAdmin = false;
 let events = JSON.parse(localStorage.getItem('anusuya_ev') || 'null') || [
   {id:1,type:'upcoming',title:'राष्ट्रीय कवि सम्मेलन – सिंगापुर 2025',date:'2025-08-15',time:'18:00',venue:'Indian Cultural Centre, Singapore',desc:'स्वतंत्रता दिवस के अवसर पर एक भव्य काव्य सम्मेलन। देश-विदेश के कवि एक साथ इस अद्भुत मंच पर।',link:'',yt:''},
@@ -1283,10 +1319,100 @@ function doLogin(){
     document.getElementById('drawerLogin').style.display='none';
     document.getElementById('drawerContent').classList.remove('hidden');
     document.getElementById('drawerFoot').style.display='flex';
+    document.getElementById('setUser').value = CREDS.u;
+    document.getElementById('setEmail').value = CREDS.email || OWNER_EMAIL;
+    document.getElementById('setPass').value = '';
     renderDrawer();
   } else {
     err.style.display='block';
   }
+}
+
+/* ════════════════════════════
+   FORGOT PASSWORD (emails a new password via Web3Forms)
+════════════════════════════ */
+function openForgotBox(){
+  const box = document.getElementById('forgotBox');
+  box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  document.getElementById('forgotEmail').value = CREDS.email || OWNER_EMAIL;
+}
+
+function genPassword(){
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789';
+  let out = '';
+  for(let i=0;i<10;i++) out += chars[Math.floor(Math.random()*chars.length)];
+  return out;
+}
+
+async function sendPasswordReset(){
+  const emailEl = document.getElementById('forgotEmail');
+  const errEl = document.getElementById('forgotErr');
+  const email = emailEl.value.trim();
+  if(!email || email.toLowerCase() !== (CREDS.email || OWNER_EMAIL).toLowerCase()){
+    errEl.textContent = '❌ यह ईमेल पंजीकृत ईमेल से मेल नहीं खाता।';
+    errEl.style.display = 'block';
+    return;
+  }
+  if(WEB3FORMS_KEY === 'YOUR_ACCESS_KEY_HERE'){
+    errEl.textContent = '⚠️ ईमेल सेवा अभी सेट नहीं हुई है (Web3Forms Access Key जोड़ें)।';
+    errEl.style.display = 'block';
+    return;
+  }
+  const newPass = genPassword();
+  errEl.style.display = 'none';
+  try{
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json', Accept:'application/json'},
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: 'आपका नया Admin पासवर्ड — अनुसुया साहू वेबसाइट',
+        from_name: 'Anusuya Sahu Website',
+        email: email,
+        message: `नमस्ते,\n\nआपका नया admin पासवर्ड है: ${newPass}\n\nकृपया लॉगिन करने के बाद इसे "खाता सेटिंग्स" में जाकर अपनी पसंद के अनुसार बदल लें।\n\n— अनुसुया साहू वेबसाइट`
+      })
+    });
+    const data = await res.json();
+    if(data.success){
+      CREDS.p = newPass;
+      saveCreds();
+      document.getElementById('forgotBox').style.display = 'none';
+      toast('नया पासवर्ड आपके ईमेल पर भेज दिया गया! 📧');
+    } else {
+      errEl.textContent = '❌ ईमेल भेजने में समस्या हुई। पुनः प्रयास करें।';
+      errEl.style.display = 'block';
+    }
+  }catch(e){
+    errEl.textContent = '❌ नेटवर्क समस्या। पुनः प्रयास करें।';
+    errEl.style.display = 'block';
+  }
+}
+
+/* ════════════════════════════
+   ACCOUNT SETTINGS (rename username / password / recovery email)
+════════════════════════════ */
+function toggleSettingsBox(){
+  const box = document.getElementById('settingsBox');
+  box.style.display = box.style.display === 'none' ? 'block' : 'none';
+}
+
+function saveSettings(){
+  const u = document.getElementById('setUser').value.trim();
+  const p = document.getElementById('setPass').value;
+  const em = document.getElementById('setEmail').value.trim();
+  const errEl = document.getElementById('setErr');
+  if(!u || !em){
+    errEl.textContent = '❌ उपयोगकर्ता नाम और ईमेल आवश्यक हैं।';
+    errEl.style.display = 'block';
+    return;
+  }
+  CREDS.u = u;
+  CREDS.email = em;
+  if(p) CREDS.p = p;
+  saveCreds();
+  document.getElementById('setPass').value = '';
+  errEl.style.display = 'none';
+  toast('सेटिंग्स सहेज दी गईं! ✓');
 }
 
 function doLogout(){
@@ -1393,15 +1519,50 @@ document.getElementById('evModal').addEventListener('click',function(e){if(e.tar
 /* ════════════════════════════
    CONTACT FORM
 ════════════════════════════ */
-function sendContact(){
+async function sendContact(evt){
   const n=document.getElementById('cfName').value.trim();
   const e=document.getElementById('cfEmail').value.trim();
   const m=document.getElementById('cfMsg').value.trim();
   if(!n||!e||!m){toast('कृपया सभी जानकारी भरें।',true);return;}
-  toast('आपका संदेश भेज दिया गया! धन्यवाद 🙏');
-  document.getElementById('cfName').value='';
-  document.getElementById('cfEmail').value='';
-  document.getElementById('cfMsg').value='';
+
+  if(WEB3FORMS_KEY === 'YOUR_ACCESS_KEY_HERE'){
+    toast('⚠️ ईमेल सेवा अभी सेट नहीं है। Web3Forms Access Key जोड़ें।', true);
+    return;
+  }
+
+  const btn = evt.target;
+  const oldText = btn.textContent;
+  btn.textContent = 'भेजा जा रहा है…';
+  btn.disabled = true;
+
+  try{
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json', Accept:'application/json'},
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: `वेबसाइट संपर्क फ़ॉर्म — ${n}`,
+        from_name: n,
+        email: OWNER_EMAIL,
+        replyto: e,
+        message: `नाम: ${n}\nईमेल: ${e}\n\nसंदेश:\n${m}`
+      })
+    });
+    const data = await res.json();
+    if(data.success){
+      toast('आपका संदेश भेज दिया गया! धन्यवाद 🙏');
+      document.getElementById('cfName').value='';
+      document.getElementById('cfEmail').value='';
+      document.getElementById('cfMsg').value='';
+    } else {
+      toast('❌ संदेश भेजने में समस्या हुई। पुनः प्रयास करें।', true);
+    }
+  }catch(err){
+    toast('❌ नेटवर्क समस्या। पुनः प्रयास करें।', true);
+  }finally{
+    btn.textContent = oldText;
+    btn.disabled = false;
+  }
 }
 
 /* ════════════════════════════
